@@ -1,0 +1,17 @@
+{% load static %}
+
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <h2 class="mb-5">Awards & Certifications</h2>
+
+        <ul class="fa-ul mb-0">
+            {% for cert in certifications %}
+            <li>
+                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                {{cert.certificate_name}}
+            </li>
+           {% endfor %}
+   
+        </ul>
+    </div>
+</section>
