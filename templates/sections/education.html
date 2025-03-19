@@ -9,9 +9,9 @@
                 <h3 class="mb-0">{{edu.school_name}}</h3>
                 <div class="subheading mb-3">{{edu.degree}}</div>
                 <div>{{edu.description | safe}}</div>
-                <p>GPA: {{edu.gpa}}</p>
+                <!-- <p>GPA: {{edu.gpa}}</p> -->
             </div>
-            <div class="flex-shrink-0"><span class="text-primary">{{edu.start_date}} - {{edu.end_date | default:"Studying"}}</span></div>
+            <div class="flex-shrink-0"><span class="text-primary">{{edu.start_date}} - {{edu.end_date | default:"Present"}}</span></div>
         </div>
         {% endfor %}
     </div>

@@ -25,7 +25,7 @@ class Experience(models.Model):
     description = RichTextField()
 
     def __str__(self):
-        return super().__str__()
+        return self.company_name
     
 class Education(models.Model):
     school_name = models.CharField(max_length=100)

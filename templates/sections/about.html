@@ -6,17 +6,18 @@
             <span class="text-primary">{{about.last_name}}</span>
         </h1>
         <div class="subheading mb-5">
-            {{about.address}} · {{about.phone}} ·
+            {{about.address}} · {{about.phone}}
             <a href="mailto:name@email.com">{{about.email}}</a>
         </div>
         <p class="lead mb-5">
             {{about.description | safe}}
             </p>
         <div class="social-icons">
-            <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon" href="{{about.linkedin_link}}" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="{{about.github_link}}" target="_blank"><i class="fab fa-github"></i></a>
+            <a class="social-icon" href="{{about.fb_link}}" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class="social-icon" href="{{about.twitter_link}}" target="_blank"><i class="fas fa-globe"></i></a>
+
         </div>
     </div>
 </section>
